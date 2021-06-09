@@ -1,10 +1,10 @@
-import FormLogin from '../../components/FormLogin'
+import FormContainer from '../../components/FormContainer'
 import {Container} from './styles'
 
 const Login = () => {
     return (
         <Container>
-            <FormLogin/>
+            <FormContainer/>
         </Container>
     )
 }

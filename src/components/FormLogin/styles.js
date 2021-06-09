@@ -1,66 +1,44 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-    width: 100%;
-    max-width: 368px;
-    padding: 1rem;
-    box-sizing: content-box;
-
-    header {
-        margin-bottom: 50px;
-        display: flex;
-        align-items: center;
-
-        img {
-            margin-right: 1rem;
+export const StyledForm = styled.form`
+    > div {
+        padding: 16px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.32);
+        :nth-of-type(2) {
+            position: relative;
         }
-
-        span {
+        label {
+            display: block;
             color: #fff;
-            font-size: 1.75rem;
-            font-weight: 300;
+            opacity: 0.5;
+            font-size: 0.5rem;
+        }
+        input {
+            width: 100%;
+            border: none;
+            color: #fff;
+            background: transparent;
+            outline: none;
+        }
+        button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 44px;
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+            color: #B22E6F;
+            background-color: #fff;
+            cursor: pointer;
         }
     }
 
-    form {
-        div {
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-            background-color: rgba(0, 0, 0, 0.32);
-
-            :nth-child(2) {
-                position: relative;
-            }
-
-            label {
-                display: block;
-                color: #fff;
-                opacity: 0.5;
-                font-size: 0.5rem;
-            }
-
-            input {
-                border: none;
-                color: #fff;
-                background: transparent;
-            }
-
-            button {
-                padding: 8px 20px;
-                border: none;
-                border-radius: 44px;
-                position: absolute;
-                top: 50%;
-                right: 1rem;
-                transform: translateY(-50%);
-                color: #B22E6F;
-                background-color: #fff;
-            }
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        padding: 115px;
+    > p {
+        height: 16px;
+        font-size: 8px;
+        color: #fff;
+        line-height: 16px;
     }
 `

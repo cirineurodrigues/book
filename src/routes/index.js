@@ -2,19 +2,19 @@ import { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Login from '../pages/Login'
+import Home from '../pages/Home'
 
 const Routes = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(false)
 
-    if (!isAuthenticated) {
-        return (
-            <>
-                <Switch>
+    return (
+        <>
+            <Switch>
+                    <Route path='/home' component={Home}/>
                     <Route exact path='/' component={Login}/>
-                </Switch>
-            </>
-        )
-    }
+            </Switch>
+        </>
+    )
 }
 
 export default Routes

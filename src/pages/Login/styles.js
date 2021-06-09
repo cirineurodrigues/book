@@ -8,11 +8,14 @@ export const Container = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(${background_image});
+    background: url(${background_image}) no-repeat center;
     background-size: cover;
-    background-position: center;
 
     @media screen and (min-width: 768px) {
         justify-content: left;
+    }
+
+    @media screen and (min-width: 1365px) {
+        padding: 0 calc((100vw - 1365px) / 2);
     }
 `
