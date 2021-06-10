@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledForm = styled.form`
     > div {
-        padding: 16px;
+        padding: 8px 16px;
         border-radius: 4px;
         background-color: rgba(0, 0, 0, 0.32);
         :nth-of-type(2) {
@@ -12,7 +12,7 @@ export const StyledForm = styled.form`
             display: block;
             color: #fff;
             opacity: 0.5;
-            font-size: 0.5rem;
+            font-size: 0.75rem;
         }
         input {
             width: 100%;
@@ -37,7 +37,7 @@ export const StyledForm = styled.form`
 
     > p {
         height: 16px;
-        font-size: 8px;
+        font-size: 0.75rem;
         color: #fff;
         line-height: 16px;
     }

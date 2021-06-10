@@ -2,7 +2,7 @@ import {Container} from './styles'
 import Validation from '../Validation'
 import FormLogin from '../FormLogin'
 
-import Logo from '../../assets/Logo.svg'
+import logo from '../../assets/logo.svg'
 
 import {useState} from 'react'
 
@@ -17,7 +17,7 @@ const FormContainer = () => {
     return (
         <Container>
             <header>
-                <img src={Logo} alt="Ioasys Logo" title="Ioasys Logo"/>
+                <img src={logo} alt="Ioasys Logo" title="Ioasys Logo"/>
                 <span>
                     Books
                 </span>
