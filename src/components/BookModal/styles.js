@@ -65,9 +65,16 @@ export const Container = styled.section`
         .modal__image {
             width: 240px;
             height: 351px;
-            margin-bottom: 24px;
+            margin: 0 auto 24px;
             background-color: #cecece;
             filter: drop-shadow(0px 11.9008px 17.8512px rgba(0, 0, 0, 0.3));
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                vertical-align: middle;
+            }
         }
         .modal__infos {
             h2 {
@@ -148,7 +155,7 @@ export const Container = styled.section`
 
             .modal__infos {
                 width: 324px;
-                max-height: 512px;
+                height: 512px;
                 padding-right: 48px;
                 overflow-y: scroll;
                 vertical-align: top;   

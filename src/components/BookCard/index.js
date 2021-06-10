@@ -4,7 +4,7 @@ import {Card} from './styles'
 
 import BookModal from '../BookModal'
 
-const BookCard = () => {
+const BookCard = ({book}) => {
     const [showModal, setShowModal] = useState(false)
 
     const setModal = () => {
@@ -14,17 +14,24 @@ const BookCard = () => {
     return (
         <>
         <Card onClick={() => setModal()}>
-            <div>
+            <div className="card__image">
+                <img src={book.imageUrl} alt={`Capa do livro ${book.title}`} title={`Capa do livro ${book.title}`}/>
             </div>
-            <div>
-                <h2>Livro Ioasys</h2>
-                <h3>Autor Desconhecido</h3>
-                <p>150 Páginas</p>
-                <p>Editora Ioasys</p>
-                <p>Publicado em 2020</p>
+            <div className="card__infos">
+                <div>
+                    <header>
+                        <h2>{book.title}</h2>
+                        <h3>{book.authors.join(', ')}</h3>
+                    </header>
+                    <div>
+                        <p>{`${book.pageCount} Páginas`}</p>
+                        <p>{book.publisher}</p>
+                        <p>{`Publicado em ${book.published}`}</p>
+                    </div>
+                </div>
             </div>
         </Card>
-        {showModal && <BookModal setModal={setModal}/>}
+        {showModal && <BookModal setModal={setModal} book={book}/>}
         </>
     )
 }

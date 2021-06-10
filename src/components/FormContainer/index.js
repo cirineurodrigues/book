@@ -14,6 +14,10 @@ const FormContainer = () => {
         setLoading(!loading)
     }
 
+    const setMessage = () => {
+        setValidation(!validation)
+    }
+
     return (
         <Container>
             <header>
@@ -23,7 +27,7 @@ const FormContainer = () => {
                 </span>
             </header>
             <div>
-                <FormLogin loading={loading} setButton={setButton}/>
+                <FormLogin loading={loading} setButton={setButton} validation={validation} setMessage={setMessage}/>
                 {validation && <Validation/>}
             </div>
         </Container>

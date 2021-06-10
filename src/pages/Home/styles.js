@@ -11,15 +11,15 @@ export const Container = styled.main `
     background-size: cover;
     background-blend-mode: darken;
 
-    @media screen and (min-width: 624px) {
-        padding: 0 calc((100vw - 592px) / 2);
+    @media screen and (min-width: 592px) {
+        padding: 0 calc((100vw - 560px) / 2);
     }
 
-    @media screen and (min-width: 928px) {
-        padding: 0 calc((100vw - 896px) / 2);
+    @media screen and (min-width: 880px) {
+        padding: 0 calc((100vw - 848px) / 2);
     }
 
-    @media screen and (min-width: 1232px) {
-        padding: 0 calc((100vw - 1200px) / 2);
+    @media screen and (min-width: 1168px) {
+        padding: 0 calc((100vw - 1136px) / 2);
     }
 `

@@ -1,11 +1,15 @@
-import {StyledForm} from './styles'
-import Spinner from '../Spinner'
+import {StyledForm} from "./styles"
+import Spinner from "../Spinner"
 
 import * as yup from "yup";
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
+import {api} from '../../services/api'
 
-const FormLogin = ({loading, setButton}) => {
+const FormLogin = ({loading, setButton, validation, setMessage}) => {
+    const history = useHistory()
+
     const email = yup
     .string()
     .email("Email inválido")
@@ -21,10 +25,24 @@ const FormLogin = ({loading, setButton}) => {
     const { register, handleSubmit, formState: {errors} } = useForm({
         resolver: yupResolver(schema)
       });
+
+    const login = (data) => {
+        api
+            .post('/auth/sign-in', data)
+            .then((res) => {
+                localStorage.setItem('authToken', res.headers.authorization)
+                localStorage.setItem('refreshToken', res.headers["refresh-token"])
+                localStorage.setItem('name', res.data.name)
+            })
+            .catch((rej) => {
+                setMessage()
+            })
+
+    }
     
     const handleForm = (data) => {
         setButton()
-        console.log(data)
+        login(data)
     };
 
     return (

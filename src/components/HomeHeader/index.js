@@ -4,6 +4,8 @@ import logo_black from '../../assets/logo_black.svg'
 import {FiLogOut} from 'react-icons/fi'
 
 const HomeHeader = () => {
+    const name = localStorage.getItem('name')
+
     return (
         <Header>
             <h1>
@@ -13,7 +15,7 @@ const HomeHeader = () => {
                 </span>
             </h1>
             <div>
-                <p>Bem vindo, <span>Guilherme</span></p>
+                <p>Bem vindo, <span>{name}</span></p>
                 <button>
                     <FiLogOut/>
                 </button>

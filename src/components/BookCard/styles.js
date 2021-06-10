@@ -18,33 +18,61 @@ export const Card = styled.div`
     > div {
         display: inline-block;
         font-size: 0;
+    }
 
-        :nth-of-type(1) {
-            width: 81px;
+    .card__image {
+        width: 81px;
+        height: 122px;
+        margin-right: 16px;
+        vertical-align: middle;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card__infos {
+        max-width: 159px;
+        vertical-align: top;
+
+        > div {
+            display: flex;
             height: 122px;
-            margin-right: 16px;
-            background: #cecece;
-        }
+            flex-direction: column;
+            justify-content: space-between;
 
-        h2 {
-            font-size: 0.875rem;
-            font-weight: 500;
-            line-height: 20px;
-        }
+            header {
+                h2 {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 16px;
+                }
 
-        h3 {
-            margin-bottom: 30px;
-            font-size: 0.75rem;
-            font-weight: 400;
-            line-height: 20px;
-            color: #AB2680;
-        }
+                h3 {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    line-height: 16px;
+                    color: #AB2680;
+                }
+            }
 
-        p {
-            font-size: 0.75rem;
-            line-height: 20px;
-            color: #999999;
-;
+            div {
+                p {
+                    font-size: 0.75rem;
+                    line-height: 16px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 592px) {
+        max-width: 272px;
+
+        .card__infos {
+            max-width: 143px;
         }
     }
 `
