@@ -34,7 +34,7 @@ Obrigado Ioasys pela oportunidade :)
   12341234
 ```
 
-# 📱 Telas
+# 🖥️ Telas
 
 <h2 align="center">Login</h2>
 
