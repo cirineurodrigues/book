@@ -1,6 +1,6 @@
-import { booksTypes } from './actionsTypes'
+import { booksTypes } from "./actionsTypes";
 
 export const getBooks = (booksInfos) => ({
-    type: booksTypes.GET_BOOKS,
-    booksInfos
-})
+  type: booksTypes.GET_BOOKS,
+  booksInfos,
+});

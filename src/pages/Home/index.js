@@ -1,15 +1,21 @@
-import {Container} from './styles'
+import { Container } from "./styles";
 
-import HomeHeader from '../../components/HomeHeader'
-import BooksList from '../../components/BooksList'
+import HomeHeader from "../../components/HomeHeader";
+import BooksList from "../../components/BooksList";
 
-const Home = () => {
-    return (
-        <Container>
-            <HomeHeader/>
-            <BooksList/>
-        </Container>
-    )
-}
+import { Redirect } from "react-router-dom";
 
-export default Home
+const Home = ({ isAuthenticated }) => {
+  if (!isAuthenticated) {
+    return <Redirect to="/" />;
+  }
+
+  return (
+    <Container>
+      <HomeHeader />
+      <BooksList />
+    </Container>
+  );
+};
+
+export default Home;

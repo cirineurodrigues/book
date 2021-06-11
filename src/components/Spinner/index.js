@@ -1,12 +1,12 @@
-import {Container} from './styles'
+import { Container } from "./styles";
 import ClipLoader from "react-spinners/ClipLoader";
 
-const Spinner = () => {
-    return (
-        <Container>
-            <ClipLoader color={'#fff'} size={25}/>
-        </Container>
-    )
-}
+const Spinner = ({ loading }) => {
+  return (
+    <Container>
+      <ClipLoader loading={loading} color={"#fff"} size={25} />
+    </Container>
+  );
+};
 
-export default Spinner
+export default Spinner;

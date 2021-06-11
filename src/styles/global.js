@@ -17,4 +17,4 @@ export default createGlobalStyle`
         width: 100vw;
         max-width: 100%;
     }
-`
+`;

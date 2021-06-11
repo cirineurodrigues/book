@@ -1,12 +1,18 @@
-import FormContainer from '../../components/FormContainer'
-import {Container} from './styles'
+import FormContainer from "../../components/FormContainer";
+import { Container } from "./styles";
 
-const Login = () => {
-    return (
-        <Container>
-            <FormContainer/>
-        </Container>
-    )
-}
+import { Redirect } from "react-router-dom";
 
-export default Login
+const Login = ({ isAuthenticated }) => {
+  if (isAuthenticated) {
+    return <Redirect to="/home" />;
+  }
+
+  return (
+    <Container>
+      <FormContainer />
+    </Container>
+  );
+};
+
+export default Login;
