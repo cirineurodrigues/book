@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+<p align="center"> <img src="./src/assets/logo.svg" alt="Logo Ioasys" width="300px"></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Teste para processo seletivo Front End Ioasys</h1>
 
-## Available Scripts
+# ✅ Sobre o projeto e desenvolvimento
 
-In the project directory, you can run:
+Aplicação web construida em React JS e Redux para gerenciamento de estado. A ideia da aplicação é uma biblioteca virtual.
+Procurei tornar-la extremamente responsiva, respeitando todas proporções contidas no mockup.
+Obrigado Ioasys pela oportunidade :)
 
-### `yarn start`
+# ✅ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] Login
+- [x] Validação de formulário
+- [x] Listagem de livros
+- [x] Paginação
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# 📱 Telas
 
-### `yarn test`
+<h2 align="center">Login</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Na tela de login, realizei a validação do formulário, inclui um spinner e um feedback para o usuário caso o email ou senha estivessem incorretos.
 
-### `yarn build`
+<p align="center"> <img src="./src/assets/screenshots/login.png" alt="Login Desktop" width="300px"></p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center"> <img src="./src/assets/screenshots/validacao.png" alt="Validação de login desktop" width="300px"></p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center"> <img src="./src/assets/screenshots/erro.png" alt="Login Desktop" width="300px"></p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center"> <img src="./src/assets/screenshots/login_mobile.png" alt="Login Mobile" width="150px"></p>
 
-### `yarn eject`
+<p align="center"> <img src="./src/assets/screenshots/erro_mobile.png" alt="Erro de login mobile" width="150px"></p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h2 align="center">Home</h2>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Na tela onde os livros são renderizados, busquei atender a todos os tipos de telas, mantendo a proporção do mockup.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p align="center"> <img src="./src/assets/screenshots/livros4.png" alt="Livros" width="300px"></p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p align="center"> <img src="./src/assets/screenshots/livros3.png" alt="Livros" width="300px"></p>
 
-## Learn More
+<p align="center"> <img src="./src/assets/screenshots/livros2.png" alt="Livros" width="300px"></p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="center"> <img src="./src/assets/screenshots/livros1.png" alt="Livros" width="150px"></p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2 align="center">Modal</h2>
 
-### Code Splitting
+<p align="center"> <img src="./src/assets/screenshots/modal.png" alt="Modal Desktop" width="300px"></p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="center"> <img src="./src/assets/screenshots/modal_mobile.png" alt="Modal Mobile" width="150px"></p>
 
-### Analyzing the Bundle Size
+# 🛠 Tecnologias utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [ReactJS](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [React-Redux](https://react-redux.js.org/)
+- [Axios](https://github.com/axios/axios)
+- [Styled Components](https://styled-components.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Yup](https://github.com/jquense/yup)
+- [React Spinners](https://www.npmjs.com/package/react-spinners)
 
-### Making a Progressive Web App
+# ✅ Status do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h3 align="center"> 
+    🚀 Concluído 🚀
+</h3>
 
-### Advanced Configuration
+# 🖥️ Dev
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Made with ❤️ by [Cirineu Rodrigues](https://www.linkedin.com/in/cirineurodrigues/)
