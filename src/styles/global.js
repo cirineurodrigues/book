@@ -16,5 +16,6 @@ export default createGlobalStyle`
     body {
         width: 100vw;
         max-width: 100%;
+        overflow-x: hidden;
     }
 `;
